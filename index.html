@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Player Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <label for="lastHeartbeat">Heartbeat</label>
+            <input type="datetime-local" id="lastHeartbeat">
+            <label for="updatedAt">Updated</label>
+            <input type="datetime-local" id="updatedAt">
+            <label for="updateInterval">Interval</label>
+            <input type="number" id="updateInterval" value="900">
+            <button onclick="checkPlayerStatus()">Get Status</button>
+        </div>
+        <div class="result" id="statusResult"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
